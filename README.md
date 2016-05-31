@@ -58,4 +58,11 @@
 
 		git clone git@github.com:JackRo/learngit.git
 		git clone https://github.com/JackRo/learngit.git
-16. 
+16. 创建新分支
+
+		git checkout -b dev // -b表示创建并切换到dev分支，相当于以下两条命令
+		git branch dev
+		git checkout dev
+		
+		git branch //查看当前分支
+17. 
