@@ -68,4 +68,8 @@
 		git branch //查看当前分支
 		git merge dev //合并分支dev到当前分支
 		git branch -d dev //删除分支dev
-17. 
+17. 查看分支合并图
+
+		git log --graph
+		git log --graph --pretty=oneline --abbrev-commit
+18. 
