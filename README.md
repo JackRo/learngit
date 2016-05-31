@@ -54,4 +54,8 @@
 		//master分支，并把本地仓库的master分支和远程仓库的master分支关联起来，
 		//在以后的推送或者拉取时就可以简化命令
 		git push -u origin master 
-15. 
+15. clone远程仓库到本地
+
+		git clone git@github.com:JackRo/learngit.git
+		git clone https://github.com/JackRo/learngit.git
+16. 
