@@ -61,8 +61,8 @@
 16. 创建新分支
 
 		git checkout -b dev // -b表示创建并切换到dev分支，相当于以下两条命令
-		git branch dev
-		git checkout dev
+		git branch dev //创建分支dev
+		git checkout dev //切换到分支dev
 		
 		git branch //查看当前分支
 17. 
