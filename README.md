@@ -93,4 +93,7 @@
 		git stash drop //删除工作现场
 		git stash pop //恢复工作现场同时删除工作现场
 		git stash apply stash@{0} //恢复某个工作现场
-20. 
+20. feature分支
+
+		git branch -D [name] //强行删除分支
+21. 
