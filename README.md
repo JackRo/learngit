@@ -111,5 +111,5 @@
 		git checkout -b dev origin/dev //创建远程分支dev到本地
 		//指定本地dev分支与远程origin/dev分支的链接
 		git branch --set-upstream dev origin/dev
-		git pull //拉取远程仓库最新的提交
+		git pull //拉取远程仓库最新的
 22. 
