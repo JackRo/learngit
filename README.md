@@ -112,4 +112,26 @@
 		//指定本地dev分支与远程origin/dev分支的链接
 		git branch --set-upstream dev origin/dev
 		git pull //拉取远程仓库最新的提交
-22. 
+22. 标签tag
+
+		git tag //查看所有标签
+		git tag [name] //创建标签，默认在HEAD上创建标签，也可指定commit id
+		git tag -a [name] -m [message] [commit id] //创建标签，指定标签名和信息
+		git tag -s [name] -m [message] [commit id] //可以用PGP签名标签
+		
+		git tag -d [name] //删除本地标签
+		git push origin :refs/tags/[name] //删除远程库标签
+		git push origin [name] //推送标签
+		git push origin --tags //一次性推送全部尚未推送到远程的本地标签
+23. git配置
+
+		git config --global user.name "Your Name"
+		git config --global user.email "email@example.com"
+		git config --global color.ui true
+
+		//配置别名，可以减少较长命令的输入
+		git config --global alias.st status
+		git config --global alias.co checkout
+		git config --global alias.ci commit
+		git config --global alias.br branch
+		git config --global alias.unstage 'reset HEAD'
