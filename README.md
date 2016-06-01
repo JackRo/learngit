@@ -108,4 +108,8 @@
 		//bug分支只用于在本地修复bug，就没必要推到远程了
 		//feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发
 		git push origin master //推送本地指定分支，master也可以是dev分支，bug分支等
+		git checkout -b dev origin/dev //创建远程分支dev到本地
+		//指定本地dev分支与远程origin/dev分支的链接
+		git branch --set-upstream dev origin/dev
+		git pull //拉取远程仓库最新的提交
 22. 
