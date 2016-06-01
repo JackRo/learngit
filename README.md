@@ -20,7 +20,9 @@
 		git reset --hard HEAD^  //回退到上一版本
 		git reset --hard HEAD^^  //回退到上上一个版本
 		git reset --hard HEAD~100  //回退到上100个版本
-		git reset --hard a2e368db  //回退到某个commit id号为a2e368db的版本，这需要git log查看commit id号
+		//回退到某个commit id号为a2e368db的版本，
+		//这需要git log查看commit id号
+		git reset --hard a2e368db  
 7. 查看对git本地仓库的历史执行过的命令
 
 		git reflog
@@ -45,7 +47,9 @@
 		rm [file] //删除文件第一种方法，或者直接在文件夹中删除
 		git checkout -- [file] //如果这样删错了，要撤销删除，则执行此命令
 		git rm [file] //删除文件第二种方法
-		git commit -m 'delete file' //如果确定删除正确则提交，如果误删，则撤销删除，执行 git checkout -- [file]
+		//如果确定删除正确则提交，如果误删，
+		//则撤销删除，执行 git checkout -- [file]
+		git commit -m 'delete file' 
 14. 添加远程仓库，在本地仓库目录下执行
 
 		//这里远程仓库名是origin，这是git的默认叫法，也可以改成别的
@@ -74,5 +78,8 @@
 		git log --graph --pretty=oneline --abbrev-commit
 18. 分支管理策略
 
-		git merge --no-ff -m "merge with no-ff" dev //--no-ff参数表示禁用Fast forward模式merge
+		//--no-ff参数表示禁用Fast forward模式merge，使用普通模式合并，
+		//合并后的历史有分支，能看出来曾经做过合并，而fast forward合并
+		//就看不出来曾经做过合并。
+		git merge --no-ff -m "merge with no-ff" dev
 19. 
