@@ -72,4 +72,7 @@
 
 		git log --graph
 		git log --graph --pretty=oneline --abbrev-commit
-18. 
+18. 分支管理策略
+
+		git merge --no-ff -m "merge with no-ff" dev //--no-ff参数表示禁用Fast forward模式merge
+19. 
