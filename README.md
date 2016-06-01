@@ -82,4 +82,15 @@
 		//合并后的历史有分支，能看出来曾经做过合并，而fast forward合并
 		//就看不出来曾经做过合并。
 		git merge --no-ff -m "merge with no-ff" dev
-19. 
+19. bug分支
+
+		//修复bug时，我们会通过在master分支创建新的bug分支进行修复，然后合并，最后删除
+		//当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，
+		//再git stash pop，回到工作现场。
+		git stash //保存当前工作现场
+		git stash list //查看工作现场list
+		git stash apply //恢复工作现场，但是恢复后，stash内容不删除
+		git stash drop //删除工作现场
+		git stash pop //恢复工作现场同时删除工作现场
+		git stash apply stash@{0} //恢复某个工作现场
+20. 
