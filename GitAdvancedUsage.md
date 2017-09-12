@@ -1,6 +1,6 @@
-#Git高级用法#
+# Git高级用法 #
 
-###git reset高级用法###
+### git reset高级用法 ###
 
 1. 删除工作空间改动代码，撤销commit，撤销git add . 。这个命令执行后，就恢复到了上一次的commit状态。
 		
