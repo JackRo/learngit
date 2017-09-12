@@ -1,5 +1,7 @@
 # Git常用命令 #
 
+Git高级用法参见：[Git高级用法](GitAdvancedUsage.md)
+
 参考链接：[Git教程 - 廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 1. 初始化本地仓库
